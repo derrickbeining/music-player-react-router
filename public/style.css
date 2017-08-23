@@ -89,3 +89,10 @@ footer .progress-bar {
 .album img {
     height: 300px;
 }
+
+.active-tab,
+active-tab:hover,
+active-tab:active,
+active-tab:focus {
+    background-color: #00bc8c;
+}

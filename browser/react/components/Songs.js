@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Songs = (props) => {
+const Songs = ({songs}) => {
 
-  const songs = props.songs;
+  // const songs = props.songs;
 
   return (
     <table className='table'>
@@ -23,11 +23,11 @@ const Songs = (props) => {
                   <span className="glyphicon glyphicon-play"></span>
                 </button>
               </td>
-              <td>{ song.name }</td>
+              <td>{song.name}</td>
               <td>
-                <span>{ song.artists ? song.artists.map(artist => artist.name).join(', ') : null }</span>
+                <span>{song.artists ? song.artists.map(artist => artist.name).join(', ') : null}</span>
               </td>
-              <td>{ song.genre }</td>
+              <td>{song.genre}</td>
             </tr>
           ))
         }

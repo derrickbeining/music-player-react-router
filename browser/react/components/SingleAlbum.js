@@ -39,11 +39,14 @@ export default class SingleAlbum extends Component {
     return (
       <div className="album">
         <div>
-          <h3>{album.name}</h3>
+          <h3>{album.name} <a className="btn btn-default" href="mailto:bestbud@someEmail.com">
+            <span className="glyphicon glyphicon-share-alt"></span>
+          </a>
+          </h3>
           <img src={album.imageUrl} className="img-thumbnail" />
-        </div>
+        </div >
         <Songs songs={album.songs} />
-      </div>
+      </div >
     );
   }
 }
